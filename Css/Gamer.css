@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Botón de volver */
+h6 a {
+    text-decoration: none;
+    color: #00aaff;
+    font-size: 14px;
+}
+
+/* Banner */
+.banner {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+}
+
+/* Títulos */
+h1 {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cada sección */
+.categoria {
+    background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación al pasar el mouse */
+.categoria:hover {
+    transform: scale(1.05);
+}
+
+/* Imágenes */
+.imagen-placeholder {
+    width: 100%;
+    height: 170px;
+    background-color: #444;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imagen-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen-placeholder img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.encabezado {
+    font-weight: bold;
+    background-color: #4eb1cf;
+}

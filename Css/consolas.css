@@ -1,0 +1,114 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    background-color: #ff4757;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Enlace de regreso */
+h6 {
+    text-align: center;
+}
+
+h6 a {
+    text-decoration: none;
+    color: #ffa502;
+    font-size: 16px;
+}
+
+h6 a:hover {
+    color: #ff6b81;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Categorías */
+.categoria {
+    background-color: #2f3542;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+    min-width: 300px;
+}
+
+/* Encabezados de categorías */
+.categoria h3 {
+    background-color: #3742fa;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+/* Logos de consolas */
+.imagen-placeholder img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Tablas */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #57606f;
+}
+
+.fila.encabezado {
+    font-weight: bold;
+    background-color: #ffa502;
+    color: #000;
+}
+
+.celda {
+    flex: 1;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .categoria {
+        width: 100%;
+    }
+}

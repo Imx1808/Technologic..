@@ -1,0 +1,77 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Cada sección */
+.categoria {
+    background: linear-gradient(to bottom, white, #f0f0f0);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes dentro de cada sección */
+.imagen-placeholder img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Espacio para la tabla */
+.tabla {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: white;
+}
+
+/* Filas de la tabla */
+.fila {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+
+/* Encabezado */
+.encabezado {
+    font-weight: bold;
+    background-color: #4eb1cf;
+    text-align: center;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+}
+
+.banner-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}

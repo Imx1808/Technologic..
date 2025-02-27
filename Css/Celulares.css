@@ -1,0 +1,124 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Fondo general */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Contenedor del banner */
+.banner-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagen del banner */
+.banner {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Ajustar banner en pantallas pequeñas */
+@media (max-width: 900px) {
+    .banner {
+        max-width: 80%; /* Reduce tamaño */
+    }
+}
+
+@media (max-width: 500px) {
+    .banner {
+        max-width: 60%; /* Más pequeño en móviles */
+    }
+}
+
+/* Contenedor principal */
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Estilo para cada cuadro (marca) */
+.marca {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto 3D */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación al pasar el mouse */
+.marca:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un poco */
+}
+
+/* Bordes de colores para cada cuadro */
+.marca:nth-child(1) { border-top: 5px solid #0071e3; } /* Azul Apple */
+.marca:nth-child(2) { border-top: 5px solid #e91e63; } /* Rosa Motorola */
+.marca:nth-child(3) { border-top: 5px solid #ff9800; } /* Naranja Samsung */
+.marca:nth-child(4) { border-top: 5px solid #4caf50; } /* Verde Xiaomi */
+.marca:nth-child(5) { border-top: 5px solid #ff5722; } /* Rojo Oppo */
+.marca:nth-child(6) { border-top: 5px solid #9c27b0; } /* Morado Huawei */
+.marca:nth-child(7) { border-top: 5px solid #009688; } /* Verde oscuro Realme */
+.marca:nth-child(8) { border-top: 5px solid #3f51b5; } /* Azul Honor */
+
+/* Imágenes de las marcas */
+.marca img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Tablas */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+/* Encabezado de la tabla */
+.encabezado {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+nav{
+    gap: 20px;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
